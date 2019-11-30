@@ -1,0 +1,184 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url(../fonts/8143.otf);
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded 100';
+    src: url(../fonts/MuseoSansRounded-100.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/bground.png) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #152335;
+    margin: 10% auto;
+    width: 690px;
+    height: 395px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 65px;
+    height: 35px;
+    padding: 25px 0 0 20px;
+}
+
+.content__pic {
+    width: 330px;
+    height: 160px;
+}
+
+.content__pic_move {
+    margin: 30px 0 0 135px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.content__property {
+    width: 190px;
+    height: 240px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 24px;
+    color: #c1c3c5;
+    margin-left: 80px;
+    font-weight: 300;
+}
+
+.content__name_forWho {
+    font-size: 14px;
+    opacity: .54;
+    margin: 10px;
+}
+
+.content__list_form {
+    margin: 0;
+    padding: 0;
+}
+
+.content__stars {
+    margin: 10px 0 30px 0;
+}
+
+.content__list_choice {
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    background-color: #152335;
+    border: solid 1px rgba(231, 231, 231, 0.54);
+    text-align: center;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+[placeholder] {
+    text-align: center;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.content__list_choice:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content__btn_style {
+    font-family: 'Museo Sans Rounded 100';
+    font-size: 14px;
+    text-decoration: none;
+    border: solid 1px rgba(231, 231, 231, 0.54);
+    min-width: 180px;
+    min-height: 40px;
+    padding: 15px 60px;
+    color: #c1c3c5;
+    background-color: #283443;
+}
+
+.content__btn {
+    margin-top: 30px;
+}
+
+.content__btn_style:hover {
+    color: #283443;
+    background-color: #c1c3c5;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 17px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+    cursor: pointer;
+}
+
+.rating>input:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
